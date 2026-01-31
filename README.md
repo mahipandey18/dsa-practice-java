@@ -1,7 +1,6 @@
 # DSA Practice in Java
 
 This repository contains my structured practice of Data Structures and Algorithms (DSA) using Java. The goal of this repository is to strengthen core problem-solving skills, algorithmic thinking, and coding fundamentals required for software engineering internships and further computer science studies.
-
 I focus on understanding the logic behind each problem rather than memorizing solutions. For each problem, I include comments explaining the approach, time complexity, and key learnings.
 ---
 ## Language Used
