@@ -1,3 +1,7 @@
+// LeetCode 1: Two Sum
+// Approach: Use two nested loops to check all possible pairs and return indices when their sum equals the target
+// Learning: Brute-force solutions are simple to implement but have O(n^2) time complexity, which can be optimized using hashing
+
 //Solution
 class Solution {
     public int[] twoSum(int[] nums, int target) {
