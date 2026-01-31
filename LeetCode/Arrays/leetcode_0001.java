@@ -1,6 +1,8 @@
-// LeetCode 1: Two Sum
-// Approach: Use two nested loops to check all possible pairs and return indices when their sum equals the target
-// Learning: Brute-force solutions are simple to implement but have O(n^2) time complexity, which can be optimized using hashing
+// leetcode 1: two sum
+// approach: use two nested loops to check all possible pairs and return indices when their sum equals the target
+// time complexity: o(n^2)
+// space complexity: o(1)
+// learning: brute-force solutions are easy to implement but do not scale well for large inputs
 
 //Solution
 class Solution {
