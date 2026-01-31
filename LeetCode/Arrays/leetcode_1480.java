@@ -1,6 +1,8 @@
-// LeetCode 1480: Running Sum of 1d Array
-// Approach: Create a prefix sum array where each element stores the sum of all previous elements including itself
-// Learning: Prefix sum technique allows cumulative calculations in linear time using previous results
+// leetcode 1480: running sum of 1d array
+// approach: create a prefix sum array where each element is the sum of itself and all previous elements
+// time complexity: o(n)
+// space complexity: o(n)
+// learning: prefix sum technique helps solve cumulative sum problems efficiently
 
 //Solution
 class Solution {
