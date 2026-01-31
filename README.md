@@ -19,3 +19,18 @@ I focus on understanding the logic behind each problem rather than memorizing so
 ## Structure
 Each folder represents a specific DSA topic.  
 Each problem is solved in a separate Java file with explanatory comments.
+
+## Practice Source
+- LeetCode
+
+## Learning Approach
+- Solve problems step by step
+- Use hints or references when stuck
+- Rewrite solutions after understanding
+- Focus on clean logic and explanation
+
+## Goal
+To build strong DSA fundamentals that support:
+- Software engineering internships
+- Interview preparation
+- Research-oriented problem solving
