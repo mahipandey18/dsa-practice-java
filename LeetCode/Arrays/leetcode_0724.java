@@ -1,3 +1,9 @@
+// LeetCode 724: Find Pivot Index
+// Approach: Compute total sum first, then iterate while maintaining left sum and derive right sum using total - leftSum - current
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Learning: Prefix sum logic allows comparing left and right partitions in a single pass without extra space
+
 // Solution
 class Solution {
     public int pivotIndex(int[] nums) {
