@@ -1,3 +1,9 @@
+// LeetCode 238: Product of Array Except Self
+// Approach: Compute prefix (left) and suffix (right) product arrays and multiply them to get the result for each index
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Learning: Splitting the product into independent left and right parts avoids division and handles zero values safely
+
 // Solution
 class Solution {
     public int[] productExceptSelf(int[] nums) {
