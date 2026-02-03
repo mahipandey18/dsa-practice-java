@@ -1,3 +1,9 @@
+// LeetCode 125: Valid Palindrome
+// Approach: Remove all non-alphanumeric characters using regex, convert the string to lowercase, then compare characters from both ends to check for palindrome
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Learning: Preprocessing the string simplifies the palindrome check logic
+
 // Solution
 class Solution {
     public boolean isPalindrome(String s) {
