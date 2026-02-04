@@ -1,3 +1,9 @@
+// LeetCode 560: Subarray Sum Equals K
+// Approach: Use prefix sum and a HashMap to store how many times each cumulative sum has occurred; for each new sum, check if (sum - k) exists to count valid subarrays
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Learning: Storing prefix sums with their frequencies allows counting multiple subarrays efficiently, even when negative numbers are present
+
 // Solution
 class Solution {
     public int subarraySum(int[] nums, int k) {
