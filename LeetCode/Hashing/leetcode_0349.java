@@ -1,3 +1,9 @@
+// LeetCode 349: Intersection of Two Arrays
+// Approach: Store all elements of nums1 in a HashMap with a marker value (1); then iterate through nums2 and whenever an element exists in the map with value 1, add it to the result list and mark it as used (set value to 0) to avoid duplicates
+// Time Complexity: O(n + m), where n is the length of nums1 and m is the length of nums2
+// Space Complexity: O(n), for storing elements of nums1 in the HashMap and the result array
+// Learning: Using a HashMap allows constant-time lookups and helps ensure each intersecting element is added only once
+
 // Solution
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
