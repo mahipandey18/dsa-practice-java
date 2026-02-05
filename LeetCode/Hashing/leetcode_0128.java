@@ -1,3 +1,9 @@
+// LeetCode 128: Longest Consecutive Sequence
+// Approach: Use a HashMap to remove duplicate elements, copy the unique keys into an array, sort the array, and then scan it to find the longest consecutive sequence by maintaining a running count and a maximum length
+// Time Complexity: O(n log n), due to sorting the unique elements
+// Space Complexity: O(n), for the HashMap and the auxiliary array
+// Learning: When scanning sorted data for streaks, always reset the current count on breaks and track the maximum separately to avoid mixing multiple sequences
+
 // Solution
 class Solution {
     public int longestConsecutive(int[] nums) {
