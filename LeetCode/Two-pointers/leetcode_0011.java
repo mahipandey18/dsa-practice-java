@@ -1,3 +1,9 @@
+// LeetCode 11: Container With Most Water
+// Approach: Use two pointers starting at both ends of the array; calculate area using the shorter height and move the pointer pointing to the shorter line inward
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Learning: Moving the pointer at the shorter height helps explore potentially larger areas efficiently
+
 // Solution
 class Solution {
     public int maxArea(int[] height) {
