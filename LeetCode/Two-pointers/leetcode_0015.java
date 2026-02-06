@@ -1,3 +1,9 @@
+// LeetCode 15: 3Sum
+// Approach: Sort the array, then fix one element using index i and apply a two-pointer technique (j and k) on the remaining part to find pairs that sum to -nums[i]; skip duplicate values for i, j, and k to avoid repeating triplets
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+// Learning: Combining sorting with two pointers allows efficient exploration of unique triplets while handling duplicates correctly
+
 // Solution
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
