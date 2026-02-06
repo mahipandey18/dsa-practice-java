@@ -1,3 +1,9 @@
+// LeetCode 283: Move Zeroes
+// Approach: Use two pointers where the right pointer scans the array and the left pointer tracks the position to place the next non-zero element by swapping
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Learning: Fast and slow pointer technique helps rearrange elements in-place while preserving order
+
 // Solution
 class Solution {
     public void moveZeroes(int[] nums) {
