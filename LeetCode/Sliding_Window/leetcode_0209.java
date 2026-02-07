@@ -1,3 +1,9 @@
+// LeetCode 209: Minimum Size Subarray Sum
+// Approach: Use a sliding window with two pointers i and j; expand the window by moving j to add elements to the sum, and shrink the window by moving i when the sum is >= target
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Learning: Sliding window avoids checking all subarrays and efficiently finds the smallest valid window
+
 // Solution
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
