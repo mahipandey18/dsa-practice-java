@@ -1,3 +1,9 @@
+// LeetCode 424: Longest Repeating Character Replacement
+// Approach: Use a sliding window with two pointers i and j and a frequency array to count characters in the current window; expand the window by moving j and updating the maximum frequency character, and shrink the window from the left when the number of required replacements exceeds k
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Learning: The key insight is that a window is valid if (window length − frequency of the most common character) ≤ k, allowing efficient window expansion without recalculating frequencies each time
+
 // Solution
 class Solution {
     public int characterReplacement(String s, int k) {
