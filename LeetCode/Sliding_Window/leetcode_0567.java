@@ -1,3 +1,9 @@
+// LeetCode 567: Permutation in String
+// Approach: Use a fixed-size sliding window of length s1 over s2 and compare character frequencies using two arrays
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Learning: Sliding window with frequency matching is ideal for permutation/anagram problems
+
 // Solution
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
