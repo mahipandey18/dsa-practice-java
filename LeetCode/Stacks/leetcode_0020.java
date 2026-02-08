@@ -1,3 +1,9 @@
+// LeetCode 20: Valid Parentheses
+// Approach: Use a stack to store opening brackets; iterate through the string, push opening brackets, and for each closing bracket check if the stack is non-empty and the top matches, then pop; return true only if the stack is empty at the end
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Learning: Stack helps validate nested and ordered structures by matching the most recent opening bracket with the current closing bracket
+
 // Solution
 class Solution {
     public boolean isValid(String s) {
