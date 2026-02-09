@@ -1,3 +1,9 @@
+// LeetCode 155: Min Stack
+// Approach: Use a single stack to store the difference between the pushed value and the current minimum; maintain a variable min to track the current minimum, update it when a new smaller value is pushed, and restore the previous minimum during pop when a negative difference is encountered
+// Time Complexity: O(1) for push, pop, top, and getMin
+// Space Complexity: O(n)
+// Learning: Encoding values as differences allows tracking and restoring minimum values in constant time using only one stack
+
 // Solution
 class MinStack {
     Stack <Long> st;
