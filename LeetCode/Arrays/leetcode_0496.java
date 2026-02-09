@@ -1,3 +1,9 @@
+// LeetCode 496: Next Greater Element I
+// Approach: Use a brute-force method where for each element in nums1, its position is found in nums2 and the elements to its right are scanned to find the first greater value; if none exists, store -1
+// Time Complexity: O(n * m)
+// Space Complexity: O(1)
+// Learning: Direct scanning helps understand the next greater element concept before optimizing with a stack-based approach
+
 // Solution
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
