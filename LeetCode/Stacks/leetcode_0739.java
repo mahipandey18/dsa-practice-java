@@ -3,6 +3,8 @@
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 // Learning: Storing indices in a monotonic stack allows efficient calculation of "next greater element" style problems while preserving position information
+
+// Solution
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
         int n = temperatures.length;
