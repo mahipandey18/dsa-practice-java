@@ -1,4 +1,8 @@
-// Solution
+// LeetCode 21: Merge Two Sorted Linked Lists
+// Approach: Use a dummy node to simplify edge cases; iterate through both lists, attach the smaller node each time, and finally attach the remaining nodes
+// Time Complexity: O(n + m), n and m are lengths of the two lists
+// Space Complexity: O(1)
+// Learning: Dummy node simplifies head management; merging in-place avoids extra memory
 /**
  * Definition for singly-linked list.
  * public class ListNode {
