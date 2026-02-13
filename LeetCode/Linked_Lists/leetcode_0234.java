@@ -1,3 +1,9 @@
+// LeetCode 234: Palindrome Linked List
+// Approach: Copy linked list values to an array, then check with two pointers if the array is a palindrome
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Learning: Using an array simplifies palindrome check; careful pointer/index management is key
+
 // Solution
 class Solution {
     public boolean isPalindrome(ListNode head) {
