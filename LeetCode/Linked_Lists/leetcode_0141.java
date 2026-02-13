@@ -1,3 +1,9 @@
+// LeetCode 141: Linked List Cycle
+// Approach: Traverse the linked list while storing visited node references in a HashSet; if a node is encountered again (already present in the set), a cycle exists
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Learning: Storing node references (not values) allows cycle detection by identifying repeated memory addresses during traversal
+
 // Solution
 // 1. By Hashing
 public class Solution {
