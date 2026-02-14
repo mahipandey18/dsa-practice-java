@@ -5,3 +5,21 @@
 // Learning: Comparing mid with high efficiently identifies the unsorted half containing the minimum in a rotated sorted array
 
 // Solution
+class Solution {
+    public int findMin(int[] nums) {
+        int n = nums.length;
+        int low = 0;
+        int high = n-1;
+
+        while(low<high){
+            int mid = low+(high-low)/2;
+            if(nums[mid]>nums[high]){
+                low = mid+1;
+            }
+            else{
+                high = mid;
+            }
+        }
+        return nums[low];
+    }
+}
