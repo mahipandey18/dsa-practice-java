@@ -12,7 +12,6 @@ class Solution {
 
         while (low <= high) {
             int mid = low + (high - low) / 2;
-
             if (nums[mid] == target)
                 return mid;
 
@@ -24,7 +23,6 @@ class Solution {
                 }
             }
             else {
-
                 if (nums[mid] < target && target <= nums[high]) {
                     low = mid + 1;
                 } else {
@@ -32,7 +30,6 @@ class Solution {
                 }
             }
         }
-
         return -1;
     }
 }
