@@ -1,3 +1,9 @@
+// LeetCode 1011: Capacity To Ship Packages Within D Days  
+// Approach: Use binary search on the capacity range from max(weights) to sum(weights); for each mid capacity, simulate loading packages sequentially to compute required days and shrink the search space to find the minimum capacity that allows shipping within the given days  
+// Time Complexity: O(n log(sum(weights)))  
+// Space Complexity: O(1)  
+// Learning: Binary search on answer works for monotonic capacity problems, and careful simulation helps determine whether a candidate capacity satisfies the constraint
+
 // Solution
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
