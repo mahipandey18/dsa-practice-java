@@ -1,3 +1,9 @@
+// LeetCode 107: Binary Tree Level Order Traversal II
+// Approach: Use Breadth First Search (BFS) with a Queue; process nodes level by level using queue.size(), collect each level’s values in a list, and insert each level at index 0 of the result list to build bottom-up order directly
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Learning: Inserting each level at the front of the result list allows bottom-up traversal without reversing at the end, reinforcing the BFS level-by-level processing pattern
+
 // Solution
 class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
