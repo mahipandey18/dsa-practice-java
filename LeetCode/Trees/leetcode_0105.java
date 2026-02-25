@@ -5,7 +5,6 @@
 // Learning: Constructing a binary tree from traversal arrays relies on understanding preorder (root first) and inorder (root in middle) relationships and recursively slicing arrays to build subtrees
 
 // Solution
-// Method - 1
 class Solution {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if(preorder.length==0){
