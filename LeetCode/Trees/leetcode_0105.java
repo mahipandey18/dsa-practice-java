@@ -36,6 +36,16 @@ class Solution {
         return root;
     }
 }
+
+// Method - 2
+// LeetCode 105: Construct Binary Tree from Preorder and Inorder Traversal
+// Approach: Use a HashMap to store inorder value-to-index mapping for O(1) lookup. Maintain a class-level preIndex to track the current root in preorder traversal. Recursively build the tree by picking preorder[preIndex] as root, finding its position in inorder to divide left and right subtrees, and constructing left subtree before right subtree.
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Learning: Efficient tree construction from traversals requires understanding preorder (root-first) behavior, inorder partitioning for subtree boundaries, and using a global pointer plus hashmap to avoid repeated scanning and array slicing.
+
+// Solution
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
