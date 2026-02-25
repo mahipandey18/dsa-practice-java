@@ -45,7 +45,31 @@ class Solution {
 // Learning: Efficient tree construction from traversals requires understanding preorder (root-first) behavior, inorder partitioning for subtree boundaries, and using a global pointer plus hashmap to avoid repeated scanning and array slicing.
 
 // Solution
+class Solution {
+    Map<Integer, Integer> map = new HashMap<>(); // inorder value -> index
+    int preIndex = 0; // tracks the current root in preorder
 
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        for (int i = 0; i < inorder.length; i++) {
+            map.put(inorder[i], i);
+        }
+        return tree(preorder, 0, inorder.length - 1);
+    }
+
+    private TreeNode tree(int[] preorder, int start, int end) {
+        if (start > end) return null;
+
+        int rootVal = preorder[preIndex++];
+        TreeNode root = new TreeNode(rootVal);
+
+        int mid = map.get(rootVal);
+
+        root.left = tree(preorder, start, mid - 1);
+        root.right = tree(preorder, mid + 1, end);
+
+        return root;
+    }
+}
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
