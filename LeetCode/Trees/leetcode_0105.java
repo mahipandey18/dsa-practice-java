@@ -1,3 +1,9 @@
+// LeetCode 105: Construct Binary Tree from Preorder and Inorder Traversal
+// Approach: Recursively build the tree; take the first element of preorder as root, find its index in inorder to split left and right subtrees, slice preorder and inorder arrays accordingly, recursively build left and right subtrees, and attach them to root
+// Time Complexity: O(n^2) due to array slicing (can be optimized using a hashmap for inorder indices)
+// Space Complexity: O(n) for recursion stack and array copies
+// Learning: Constructing a binary tree from traversal arrays relies on understanding preorder (root first) and inorder (root in middle) relationships and recursively slicing arrays to build subtrees
+
 // Solution
 class Solution {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
